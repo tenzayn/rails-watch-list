@@ -1,0 +1,18 @@
+<div class="home-banner">
+  <h1><span id="banner-typed-text"></span></h1>
+    <h1 class="banner-arrow">⌵</h1>
+</div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= asset_path("mixmovie.jpg")%>');">
+  <div class="container">
+    <div class= "row cards">
+      <h1>Tenzin's movie collection <strong>best collection</strong> to <strong>jobless people</strong>!</h1>
+      <p>There is no greater joy than putting laptop on your belly and binge watching movies</p>
+      <a class="btn btn-flat" href="#">choose</a>
+    </div>
+  </div>
+</div>
+
+<% @lists.each do |list|%>
+<%= list.name%>
+<% end%>
